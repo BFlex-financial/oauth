@@ -15,7 +15,7 @@ document.querySelector('body').innerHTML = `
 <p>Está ciente de que aceita isto?</p>
 <button onclick="(function () {
 
-let auth = prompt('Para completar a autenticação, e termos ciência de que você tem certeza da decisão, Digite: \"Estou ciente dos riscos e confirmo ter lido a pagina\"', 'Eu não autorizo a autenticação');
+let auth = prompt('Para completar a autenticação, e termos ciência de que você tem certeza da decisão, Digite: \\"Estou ciente dos riscos e confirmo ter lido a pagina\\"', 'Eu não autorizo a autenticação');
 if( auth == 'Estou ciente dos riscos e confirmo ter lido a pagina' )
   {
     fetch(\`${API}/${info.id.id.String}\`, {
