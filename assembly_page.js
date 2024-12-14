@@ -1,5 +1,3 @@
-const page = document;
-const API = 'http://127.0.0.1/oauth/authorize'
 const info = JSON.parse(sessionStorage.getItem('oauth'));
 
 if(! localStorage.getItem('api_key') ) 
