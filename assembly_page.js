@@ -14,7 +14,7 @@ document.querySelector('body').innerHTML = `
 </ul>
 <p>Está ciente de que aceita isto?</p>
 <script>
-  function () {
+  function auth() {
     let auth = prompt('Para completar a autenticação, e termos ciência de que você tem certeza da decisão, Digite: \\"Estou ciente dos riscos e confirmo ter lido a pagina\\"', 'Eu não autorizo a autenticação');
     if( auth == 'Estou ciente dos riscos e confirmo ter lido a pagina' )
       {
