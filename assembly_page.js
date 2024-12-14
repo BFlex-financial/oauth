@@ -13,21 +13,6 @@ document.querySelector('body').innerHTML = `
   <li>Revendas em seu nome</li>
 </ul>
 <p>Está ciente de que aceita isto?</p>
-<script>
-  function auth() {
-    let auth = prompt('Para completar a autenticação, e termos ciência de que você tem certeza da decisão, Digite: \\"Estou ciente dos riscos e confirmo ter lido a pagina\\"', 'Eu não autorizo a autenticação');
-    if( auth == 'Estou ciente dos riscos e confirmo ter lido a pagina' )
-      {
-        fetch(\`${API}/${info.id.id.String}\`, {
-          method: 'POST',
-          headers: {
-            'Content-type': 'application/json',
-            'Authorization-key': 'Bearer ' + localStorage.getItem('api_key')
-          }
-        });
-      }
-  }
-</script>
 <button onclick="auth()">
   Autorizar conexão
 </button>
