@@ -1,5 +1,5 @@
 const info = JSON.parse(sessionStorage.getItem('oauth'));
-const API = 'http://127.0.0.1/oauth/authorize'
+const API = 'http://127.0.0.1:8080/oauth/authorize'
 
 if(! localStorage.getItem('api_key') ) 
   location.href = 'https://bflex.tech'
